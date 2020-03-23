@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MeeJeen</title>
+    <!--
+    <link rel="shortcut icon" href="images/favicon3_MsN_icon.ico" type="image/x-icon"/>
+    -->
+    <link rel="stylesheet" type="text/css" href="font/font.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+            
+            //slick
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav',
+                autoplay:true,
+                autoplaySpeed:2000,
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                focusOnSelect: true,
+                arrows:false,
+                autoplay:1,
+            });
+
+            $('a[data-slide]').click(function(e) {e.preventDefault();
+               var slideno = $(this).data('slide');
+               $('.slider-nav').slick('slickGoTo', slideno - 3);
+            });
+            
+            //art_slick
+            $('.single-item').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed:1000,
+                prevArrow:false,
+                nextArrow:false,
+            });
+                
+            //hide banner
+            $("#more").click(function(){
+               $(".hiddenBD").toggle();
+            });
+            
+            
+        });
+    </script>
+</head>
+    
+<body>
+<!--START-->
+<div id="wrap">
+    <!--header START-->
+    <header id="header">
+        <div class="mainVisual cf">
+            <div class="main inner1100">
+                <h1>WEB</h1>
+                <p>DESIGNER</p>
+                <p>PUBLISHER</p>
+                <div class="mainS">
+                    <span>JUNG MeeJeen</span>
+                </div>
+            </div>
+        </div>
+        
+        <!--gnb-->
+        <div class="gnb">
+            <div class="inner1160">
+                <!--logo-->
+                <h1>
+                    <a href="#">
+                        <img src="images/porfol2_21.png" alt="로고이미지"/>
+                    </a>    
+                </h1>
+                <!--logo-->
+
+                <ul>
+                    <li><a href="#">I AM</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--gnb-->
+    </header>
+    <!--header END-->
+    
+    <!--container START-->
+    <div id="container">
+    <div class="container1 inner">
+    
+    <!--intro/IAM/ START-->
+    <div id="iam" class="inner1000">
+        <h2>I AM</h2>
+        <div class="history">
+            <h3>HISTORY</h3>
+            <div class="his_txt">
+                <img class="imgp2" src="images/porfol2_28.png" alt="학사모아이콘"/>
+                <p>부산 더조은 컴퓨터 학원<br/>&#45; 스마트(UI/UX)웹디자인 모바일콘텐츠개발 양성과정</p>
+                <span>&emsp;&ensp;&#40;2018.06 ~ 2019.01&#41;</span>
+            </div>
+            <div class="his_txt">
+                <img src="images/porfol2_31.png" alt="자격증아이콘"/>
+                <p>GTQ 그래픽 기술 자격 1급</p>   <span>&emsp;&ensp;&#40;2019.02&#41;</span>
+            </div>
+            <div class="his_txt">
+                <img src="images/porfol2_33.png" alt="건물아이콘"/>
+                <p>MYBIO</p>   <span>&emsp;&ensp;&#40;2019.07 ~ 2020.02&#41;</span>
+            </div>
+        </div>
+        <div class="intro">
+            <p class="intro1">안녕하세요 웹디자이너 정미진입니다.</p>
+            <p>저는 꼼꼼하게 웹을 디자인하여 모든 사람이 만족하고,<br/>이용할 수 있는 웹 페이지를 만드는 것이 목표입니다.</p>
+            <p>진정한 프로는 잘 할 수 있고, 좋아하는 일을 즐기면서 하는<br/>사람이라고 합니다.</p>
+            <p>신입의 열정으로 끊임없이 배우며, <br/>프로정신으로 세세한 부분까지 최선을 다하는<br/>웹디자이너가 되겠습니다.</p>
+        </div>
+    </div>
+    <!--intro/IAM/ END-->
+        
+    <!--portfolio START--> 
+    <div id="portfolio">
+        <div class="inner1160">
+            <div class="line"></div>
+            <h2>PORTFOLIO</h2>
+        <!--web-->
+        <div class="webD">
+            <h3>WEB DESIGN</h3>
+            
+            <div class="slider slider-for">
+                <!--hiteJinro QueensALE-->
+                <div class="webBox webBox1">
+                    <a href="#" target="_blank">
+                        <img src="images/porfol2_51.png" alt="퀸즈에일 모니터"/>
+                        <div class="web_txt">
+                            <h4>HITE JINRO - Queen's Ale</h4>
+                            <p>Web &#40;Full Page&#41;</p>
+                            <p>Design X Publishing</p>
+                            <p>2019.01.</p>
+                        </div>
+                    </a>
+                </div>
+                <!--hiteJinro QueensALE-->
+            
+                <!--cesco-->
+                <div class="webBox webBox2">
+                    <a href="#" target="_blank">
+                        <img src="images/porfol2_10.png" alt="세스코 모니터"/>
+                        <div class="web_txt">
+                            <h4>CESCO</h4>
+                            <p>Web &amp; mobile</p>
+                            <p>Design X Publishing</p>
+                            <p>2018.11.</p>
+                        </div>
+                    </a>
+                </div>
+                <!--cesco-->
+            
+                <!--pofol1-->
+                <div class="webBox webBox3">
+                    <a href="#" target="_blank">
+                        <img src="images/porfol2_07.png" alt="포폴1 모니터"/>
+                        <div class="web_txt">
+                            <h4>PORTFOLIO 1</h4>
+                            <p>Web &amp; mobile</p>
+                            <p>Design X Publishing</p>
+                            <p>2019.02.</p>
+                        </div>
+                    </a>
+                </div>
+                <!--pofol1-->
+                
+                <!--pofol2-->
+                <div class="webBox webBox4">
+                    <a href="#" target="_blank">
+                        <img src="images/porfol2_60.png" alt="포폴2 모니터"/>
+                        <div class="web_txt">
+                            <h4>PORTFOLIO 2</h4>
+                            <p>Web &amp; mobile</p>
+                            <p>Design X Publishing</p>
+                            <p>2020.03.</p>
+                        </div>
+                    </a>
+                </div>
+                <!--pofol2-->
+            </div>
+            
+            
+            <!--navWeb-->
+            <ul class="navWEB inner1000 slider slider-nav">
+                <li class="navWD">
+                    <img src="images/porfol2_20.png" alt="퀸즈에일_네비">
+                </li>
+                <li class="navWD">
+                    <img src="images/porfol2_22.png" alt="세스코_네비">
+                </li>
+                <li class="navWD">
+                    <img src="images/porfol2_24.png" alt="포폴1_네비">
+                </li>
+                <li class="navWD">
+                    <img src="images/porfol2_38.png" alt="포폴2_네비">
+                </li>
+            </ul>
+            <!--navWeb-->
+      
+        </div>
+        <!--web-->
+        
+        <!--banner-->
+        <div class="bannerD">
+            <h3>BANNER DESIGN</h3>
+            <ul class="banD inner1000">
+                <li class="banL"><img src="images/porfol2_65.png" alt="배너1_경복궁"/></li>
+                <li class="banR"><img src="images/porfol2_67_1.gif" alt="배너2_츄"/></li>
+            </ul>
+            <ul class="banD">
+                <li class="banL">
+                    <img src="images/porfol2_78.png" alt="배너3_크리스피"/>
+                </li>
+                <li class="banR">
+                    <img src="images/porfol2_79.png" alt="배너4_아토믹블론드"/>
+                </li>
+            </ul>
+            
+            <!--more-->
+            <button id="more" class="plus">
+                <span class="icon_bar"></span>        
+            </button>
+            <!--more-->
+            
+            <!--접기펼치기-->
+            <div class="hiddenBD inner1000">
+                <ul class="banD">
+                    <li class="banL">
+                        <img src="images/porfol2_70_1.gif" alt="배너5_타임세일"/>
+                    </li>
+                    <li class="banR">
+                        <img src="images/porfol2_72.png" alt="배너6_블랙프라이"/>
+                    </li>
+                </ul>
+                <ul class="banD">
+                    <li class="banL">
+                        <img src="images/porfol2_81.png" alt="배너7_1타임세일"/>
+                    </li>
+                    <li class="banR">
+                        <img src="images/porfol2_82.png" alt="배너8_설"/>
+                    </li>
+                </ul>
+                <ul class="banD">
+                    <li class="banL">
+                        <img src="images/porfol2_87.png" alt="배너9_그린데이"/>
+                    </li>
+                    <li class="banR">
+                        <img src="images/porfol2_88.png" alt="배너10_카카오"/>
+                    </li>
+                </ul>
+                <ul class="banD">
+                    <li class="banL">
+                        <img src="images/porfol2_93.png" alt="배너11_파티카"/>
+                    </li>
+                    <li class="banR">
+                        <img src="images/porfol2_94.png" alt="배너12_이지피지1"/>
+                    </li>
+                </ul>
+                <ul class="banD Dif_banD">
+                    <li class="dif_ban1 banL">
+                        <img src="images/porfol2_101.png" alt="배너13_이지피지2"/>
+                    </li>
+                    <li class="dif_ban2 banR">
+                        <img src="images/porfol2_103.png" alt="배너12_코코팜"/>
+                    </li>
+                </ul>
+            </div>
+            <!--접기펼치기-->
+        </div>
+        <!--banner-->
+        
+        <!--poster-->
+        <div class="posterD">
+            <h3>POSTER DESIGN</h3>
+            <ul class="cf inner1000">
+                <li><img src="images/porfol2_95.png"/></li>
+                <li><img src="images/porfol2_97.png"/></li>
+                <li><img src="images/porfol2_95.png"/></li>
+            </ul>
+        </div>
+        <!--poster-->
+        </div>
+    </div>
+    </div>
+    <!--container1 END-->
+        
+    <!--container2 START-->
+    <div class="container2">
+        <!--art-->
+        <div class="artD">
+            <h3>ART WORK</h3>
+            <div class="art">
+                <div class="artIMG inner1000 slider single-item">
+                    <div class="artB">
+                        <img src="images/porfol2_112.png" alt="네온"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_115.png" alt="이하늬"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_117.png" alt="빠나나한복"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_110.png" alt="말레피센트"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_90.png" alt="매화"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_63.png" alt="금붕어"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_37.png" alt="아내를죽였다"/>
+                    </div>
+                    <div class="artB">
+                        <img src="images/porfol2_47.png" alt="나이브스아웃"/>
+                    </div>
+                </div>
+                
+                <!--slick nav-->
+                
+                <!--slick nav-->
+            </div>
+        </div>
+        <!--art-->
+    <!--portfolio END--> 
+        
+        <!--contact START-->
+        <div class="contact">
+            <h3>CONTACT</h3>
+            <div class="cont_txt inner1000">
+                <h4>PHONE NUMBER</h4>
+                <p>010.3138.4209</p>
+            </div>
+            <div class="cont_txt inner1000">
+                <h4>E.MAIL</h4>
+                <p class="cont_txt_last">meej18151@gmail.com</p>
+            </div>
+        </div>
+        <!--contact END-->
+        
+    </div>
+
+    <!--container2 END-->
+    
+    <!--footer START-->
+    <footer id="footer">
+        <p>&copy;2020.JUNG MEEJEEN.ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!--footer END-->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+</div>
+<!--END-->
+</div>
+</body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
