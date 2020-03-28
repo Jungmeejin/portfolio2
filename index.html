@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>MeeJeen</title>
-    <!--
-    <link rel="shortcut icon" href="images/favicon3_MsN_icon.ico" type="image/x-icon"/>
-    -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="font/font.css"/>
     <link rel="stylesheet" type="text/css" href="css/default.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
@@ -19,52 +17,87 @@
     
     <script type="text/javascript">
         
-        $(document).ready(function() {
+    $(document).ready(function() {
             
-            //slick
-            $('.slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slider-nav',
-                autoplay:true,
-                autoplaySpeed:2000,
-            });
-            $('.slider-nav').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                asNavFor: '.slider-for',
-                dots: true,
-                focusOnSelect: true,
-                arrows:false,
-                autoplay:1,
-            });
-
-            $('a[data-slide]').click(function(e) {e.preventDefault();
-               var slideno = $(this).data('slide');
-               $('.slider-nav').slick('slickGoTo', slideno - 3);
-            });
-            
-            //art_slick
-            $('.single-item').slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay:true,
-                autoplaySpeed:1000,
-                prevArrow:false,
-                nextArrow:false,
-            });
-                
-            //hide banner
-            $("#more").click(function(){
-               $(".hiddenBD").toggle();
-            });
-            
-            
+        //popol 웹_slick 
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            autoplay:true,
+            autoplaySpeed:2000,
         });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true,
+            arrows:false,
+            autoplay:1,
+        });
+
+        $('a[data-slide]').click(function(e) {e.preventDefault();
+           var slideno = $(this).data('slide');
+           $('.slider-nav').slick('slickGoTo', slideno - 3);
+        });
+        //popol 웹_slick
+        
+        //art_slick
+        $('.single-item').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay:true,
+            autoplaySpeed:1000,
+            prevArrow:false,
+            nextArrow:false,
+        });
+        //art_slick
+        
+        //hide banner_배너 접었다폈다
+        $("#more").click(function(){
+           $(".hiddenBD").slideToggle();
+        });
+        
+        $("#close").click(function(){
+            $(".hiddenBD").slideToggle();
+        });
+        //hide banner_배너 접었다폈다
+
+        //Fixed gnb_메뉴상단고정
+        var jbOffset = $(".gnb").offset(); 
+        $(window).scroll(function(){
+            if($(document).scrollTop()>jbOffset.top){
+                $(".gnb").addClass("gnbFixed");
+            }else{$(".gnb").removeClass("gnbFixed");
+            }
+        });        
+        //Fixed gnb_메뉴 상단고정
+        
+        
+        $('.gnb ul li a').click(function(e){
+            $('.gnb ul li').removeClass('.menu-on');
+            $(this).parent('li').addClass('.menu-on');
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+        });
+        
+        
+        $('.gnbFixed ul li a').click(function(e){
+            $('.gnbFixed ul li').removeClass('.menu-on');
+            $(this).parent('li').addClass('.menu-on');
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+        });
+
+
+    });
+       
+            
     </script>
 </head>
     
@@ -96,9 +129,9 @@
                 <!--logo-->
 
                 <ul>
-                    <li><a href="#">I AM</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="menu-on"><a href="#iam">I AM</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -150,7 +183,7 @@
             <div class="slider slider-for">
                 <!--hiteJinro QueensALE-->
                 <div class="webBox webBox1">
-                    <a href="#" target="_blank">
+                    <a href="https://jungmeejin.github.io/Queens_Ale/#firstPage" target="_blank">
                         <img src="images/porfol2_51.png" alt="퀸즈에일 모니터"/>
                         <div class="web_txt">
                             <h4>HITE JINRO - Queen's Ale</h4>
@@ -164,7 +197,7 @@
             
                 <!--cesco-->
                 <div class="webBox webBox2">
-                    <a href="#" target="_blank">
+                    <a href="https://jungmeejin.github.io/cesco/" target="_blank">
                         <img src="images/porfol2_10.png" alt="세스코 모니터"/>
                         <div class="web_txt">
                             <h4>CESCO</h4>
@@ -178,7 +211,7 @@
             
                 <!--pofol1-->
                 <div class="webBox webBox3">
-                    <a href="#" target="_blank">
+                    <a href="https://jungmeejin.github.io/portFolio/" target="_blank">
                         <img src="images/porfol2_07.png" alt="포폴1 모니터"/>
                         <div class="web_txt">
                             <h4>PORTFOLIO 1</h4>
@@ -192,7 +225,7 @@
                 
                 <!--pofol2-->
                 <div class="webBox webBox4">
-                    <a href="#" target="_blank">
+                    <a href="https://jungmeejin.github.io/portfolio2/" target="_blank">
                         <img src="images/porfol2_60.png" alt="포폴2 모니터"/>
                         <div class="web_txt">
                             <h4>PORTFOLIO 2</h4>
@@ -230,15 +263,15 @@
         <div class="bannerD">
             <h3>BANNER DESIGN</h3>
             <ul class="banD inner1000">
-                <li class="banL"><img src="images/porfol2_65.png" alt="배너1_경복궁"/></li>
-                <li class="banR"><img src="images/porfol2_67_1.gif" alt="배너2_츄"/></li>
+                <li class="banL"><img src="images/porfol2_94.png" alt="배너12_이지피지1"/></li>
+                <li class="banR"><img src="images/porfol2_93.png" alt="배너11_파티카"/></li>
             </ul>
             <ul class="banD">
                 <li class="banL">
-                    <img src="images/porfol2_78.png" alt="배너3_크리스피"/>
+                    <img src="images/porfol2_88.png" alt="배너10_카카오"/>
                 </li>
                 <li class="banR">
-                    <img src="images/porfol2_79.png" alt="배너4_아토믹블론드"/>
+                    <img src="images/porfol2_87.png" alt="배너9_그린데이"/>
                 </li>
             </ul>
             
@@ -268,18 +301,18 @@
                 </ul>
                 <ul class="banD">
                     <li class="banL">
-                        <img src="images/porfol2_87.png" alt="배너9_그린데이"/>
+                        <img src="images/porfol2_65.png" alt="배너1_경복궁"/>
                     </li>
                     <li class="banR">
-                        <img src="images/porfol2_88.png" alt="배너10_카카오"/>
+                        <img src="images/porfol2_67_1.gif" alt="배너2_츄"/>
                     </li>
                 </ul>
                 <ul class="banD">
                     <li class="banL">
-                        <img src="images/porfol2_93.png" alt="배너11_파티카"/>
+                        <img src="images/porfol2_78.png" alt="배너3_크리스피"/>
                     </li>
                     <li class="banR">
-                        <img src="images/porfol2_94.png" alt="배너12_이지피지1"/>
+                        <img src="images/porfol2_79.png" alt="배너4_아토믹블론드"/>
                     </li>
                 </ul>
                 <ul class="banD Dif_banD">
@@ -290,6 +323,13 @@
                         <img src="images/porfol2_103.png" alt="배너12_코코팜"/>
                     </li>
                 </ul>
+                
+                <!--close-->
+                <button id="close" class="close">
+                    <span class="icon_bar_c"></span>        
+                </button>
+                <!--close-->
+                
             </div>
             <!--접기펼치기-->
         </div>
@@ -352,7 +392,7 @@
     <!--portfolio END--> 
         
         <!--contact START-->
-        <div class="contact">
+        <div class="contact" id="contact">
             <h3>CONTACT</h3>
             <div class="cont_txt inner1000">
                 <h4>PHONE NUMBER</h4>
@@ -374,11 +414,7 @@
         <p>&copy;2020.JUNG MEEJEEN.ALL RIGHTS RESERVED.</p>
     </footer>
     <!--footer END-->
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    
     
 </div>
 <!--END-->
