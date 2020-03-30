@@ -58,14 +58,16 @@
         });
         //art_slick
         
-        //hide banner_배너 접었다폈다
-        $("#more").click(function(){
-           $(".hiddenBD").slideToggle();
-        });
+          
+       
         
-        $("#close").click(function(){
+        //hide banner_배너 접었다폈다
+        $("#ban_btn").click(function(){
             $(".hiddenBD").slideToggle();
         });
+        //$("#btn6").click(function(){
+         //   $(this).parent().next().slideToggle("fast");//
+        //});
         //hide banner_배너 접었다폈다
 
         //Fixed gnb_메뉴상단고정
@@ -275,12 +277,6 @@
                 </li>
             </ul>
             
-            <!--more-->
-            <button id="more" class="plus">
-                <span class="icon_bar"></span>        
-            </button>
-            <!--more-->
-            
             <!--접기펼치기-->
             <div class="hiddenBD inner1000">
                 <ul class="banD">
@@ -322,29 +318,23 @@
                     <li class="dif_ban2 banR">
                         <img src="images/porfol2_103.png" alt="배너12_코코팜"/>
                     </li>
-                </ul>
-                
-                <!--close-->
-                <button id="close" class="close">
-                    <span class="icon_bar_c"></span>        
-                </button>
-                <!--close-->
-                
+                </ul>               
             </div>
             <!--접기펼치기-->
+            
+            <!--more-->
+            <div id="ban_btn">
+                <button>
+                    <img src="images/porfol2_light.png" class="swing"/>
+                </button>
+            </div>
+            <!--more-->
+            
+            
+            
         </div>
         <!--banner-->
         
-        <!--poster-->
-        <div class="posterD">
-            <h3>POSTER DESIGN</h3>
-            <ul class="cf inner1000">
-                <li><img src="images/porfol2_95.png"/></li>
-                <li><img src="images/porfol2_97.png"/></li>
-                <li><img src="images/porfol2_95.png"/></li>
-            </ul>
-        </div>
-        <!--poster-->
         </div>
     </div>
     </div>

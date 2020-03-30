@@ -257,7 +257,7 @@
 
 
 .navWEB{
-    width:420px;
+    width:410px;
     margin-top:20px;
 }
 .navWD{
@@ -321,111 +321,45 @@
     display:none;
     margin-top:50px;
 }
+.hiddenBD.on{
+    display:block;
+}
+
 .Dif_banD{}
 .dif_ban1{}
 .dif_ban2{}
 
-.plus {
-    width: 50px;
-    height: 50px;
-    margin: 5em auto 0;
-    display: block;
-    position: relative;
-    background: #0f4c81;
-    border:0;
-    border-radius: 50%;
-}
-.icon_bar {
-    background: #fffdf2;
-    width: 34px;
-    height: 2px;
-    position: absolute;
-    transition: transform 1s ease;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-.icon_bar:before, .icon_bar:after {
-    position: absolute;
-    content: '';
-    left: 16px;
-    background: #fffdf2;
-    width: 2px;
-    height: 16px;
-    transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease, bottom 0.5s ease;
-}
-.icon_bar:before { bottom: 100%; }
-.icon_bar:after { top: 100%; }
-
-
-.plus:hover .icon_bar{
-    transform: rotate(270deg);
-}
+#ban_btn{
+    width:60px;
+    height: 60px;
+    margin:0 auto;
+    padding:10px 0;
+    text-align: center;
     
- .plus:hover .icon_bar:before {
-    transform: rotate(45deg);
-    bottom: -2px;
-    left: 4px;
 }
-.plus:hover .icon_bar:after {
-    transform: rotate(-45deg);
-    top: -2px;
-    left: 4px;
-}
-
-
-.close {
-    width: 50px;
-    height: 50px;
-    margin: 5em auto 0;
-    display: block;
-    position: relative;
-    background: #0f4c81;
-    border:0;
+#ban_btn button{
     border-radius: 50%;
+    background-color:#0f4c81;
+    display: block;
+    width:100%;
+    height: 100%;
+    border:0;
 }
-.icon_bar_c {
-    background: #fffdf2;
-    width: 34px;
-    height: 2px;
-    position: absolute;
-    transition: transform 1s ease;
-    transform:rotate(45deg);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+#ban_btn button img{
+    display:block;
+    margin:0 auto;
 }
-.icon_bar_c:before, .icon_bar_c:after {
-    position: absolute;
-    content: '';
-    left: 16px;
-    background: #fffdf2;
-    width: 2px;
-    height: 16px;
-    transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease, bottom 0.5s ease;
-}
-.icon_bar_c:before { bottom: 100%; }
-.icon_bar_c:after { top: 100%; }
 
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg);
+    }
+}
 
-.close:hover .icon_bar_c{
-    transform: rotate(450deg);
-}
-    
-.close:hover .icon_bar_c:before {
-    transform: rotate(45deg);
-    bottom: -2px;
-    left: 4px;
-}
-.close:hover .icon_bar_c:after {
-    transform: rotate(-45deg);
-    top: -2px;
-    left: 4px;
-}
 
 /*banner*/
 
