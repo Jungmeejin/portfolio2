@@ -36,6 +36,7 @@
     height:80px;
     background-color:#fff;
     margin-top:50px;
+    margin-left:-3px;
     text-align:center;
     color:#0f4c81;
     border:3px solid #fff;
@@ -49,10 +50,15 @@
 /*gnb*/
 .gnb{
     background:#fffae0;
+    z-index: 1000;
 }
-.gnb .inner1160{
-    position:relative;
+.gnbFixed{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:rgba(255,250,224,0.95);
 }
+.gnb .inner1160{}
 .gnb h1{
     padding:30px 0;
 }
@@ -67,10 +73,9 @@
 
 .gnb ul{
     font-family: 'GothamPro';
-    position:absolute;
-    right:0;
-    bottom:30px;
-    
+    text-align: right;
+    margin-top:-50px;
+    padding-bottom: 35px;
 }
 .gnb ul li{
     display:inline-block;
@@ -81,6 +86,7 @@
     font-weight: 200;
 }
 
+
 /*gnb*/
 /*headerEND*/
 
@@ -90,7 +96,7 @@
 
 /*intro/IAM*/
 #iam{
-    margin-top:100px;
+    padding-top:150px;
     font-family: 'GothamPro';
 }
 #iam h2{
@@ -159,7 +165,7 @@
 
 /*portfolio*/
 #portfolio{
-    margin-top:150px;
+    padding-top:150px;
     text-align: center;
     font-family: 'GothamPro';
     
@@ -251,7 +257,7 @@
 
 
 .navWEB{
-    width:420px;
+    width:410px;
     margin-top:20px;
 }
 .navWD{
@@ -315,58 +321,43 @@
     display:none;
     margin-top:50px;
 }
+.hiddenBD.on{
+    display:block;
+}
+
 .Dif_banD{}
 .dif_ban1{}
 .dif_ban2{}
 
-.plus {
-    width: 50px;
-    height: 50px;
-    margin: 5em auto 0;
-    display: block;
-    position: relative;
-    background: #0f4c81;
-    border:0;
-    border-radius: 50%;
-}
-.icon_bar {
-    background: #fffdf2;
-    width: 34px;
-    height: 2px;
-    position: absolute;
-    transition: transform 1s ease;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-.icon_bar:before, .icon_bar:after {
-    position: absolute;
-    content: '';
-    left: 16px;
-    background: #fffdf2;
-    width: 2px;
-    height: 16px;
-    transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease, bottom 0.5s ease;
-}
-.icon_bar:before { bottom: 100%; }
-.icon_bar:after { top: 100%; }
-
-
-.plus:hover .icon_bar{
-    transform: rotate(270deg);
-}
+#ban_btn{
+    width:60px;
+    height: 60px;
+    margin:0 auto;
+    padding:10px 0;
+    text-align: center;
     
- .plus:hover .icon_bar:before {
-    transform: rotate(45deg);
-    bottom: -2px;
-    left: 4px;
 }
-.plus:hover .icon_bar:after {
-    transform: rotate(-45deg);
-    top: -2px;
-    left: 4px;
+#ban_btn button{
+    border-radius: 50%;
+    background-color:#0f4c81;
+    display: block;
+    width:100%;
+    height: 100%;
+    border:0;
+}
+#ban_btn button img{
+    display:block;
+    margin:0 auto;
+}
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg);
+    }
 }
 
 
@@ -395,6 +386,7 @@
 }
 .posterD ul li img{
     display: block;
+    box-shadow: 4px 4px 5px #999;
 }
 /*poster*/
 
@@ -451,22 +443,25 @@
 .contact h3{
     display: block;
     text-align: center;
-    font-weight: 200;
-    font-size: 26px;
-    margin-bottom: 70px;
     padding-top:100px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 40px;
 }
 .cont_txt{
     text-align: center;
 }
 .cont_txt h4{
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .cont_txt p{
-    font-size:14px;
-    font-weight: 100;
+    font-size:15px;
+    font-weight: 200;
     padding-bottom: 60px;
 }
 .cont_txt p.cont_txt_last{
@@ -491,31 +486,6 @@
     padding:50px 3px 20px 0;
 }
 /*footer*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
