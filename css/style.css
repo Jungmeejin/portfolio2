@@ -52,12 +52,7 @@
     background:#fffae0;
     z-index: 1000;
 }
-.gnbFixed{
-    position:fixed;
-    top:0;
-    width:100%;
-    background-color:rgba(255,250,224,0.95);
-}
+
 .gnb .inner1160{}
 .gnb h1{
     padding:30px 0;
@@ -85,6 +80,63 @@
     color:#0f4c81;
     font-weight: 200;
 }
+
+.gnbFixed{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:rgba(255,250,224,0);
+}
+.gnbFixed h1{
+    width:27px;
+    height: 20px;
+    position:absolute;
+    top:210px;
+    right:6%;
+}
+.gnbFixed h1 a{
+    display:block;
+    height: 100%;
+    width:100%;
+}
+.gnbFixed h1 a img{
+    display:block;
+    background-color:#fff;
+    padding:1px;
+    width:20px;
+    margin:0 auto;   
+}
+.gnbFixed h1 a:hover img{
+    background-color:#000;
+}
+.gnbFixed ul{
+    position:absolute;
+    right:5%;
+    top:300px;
+}
+.gnbFixed ul li{
+    display:block;
+    margin-top:30px;
+}
+.gnbFixed ul li p{
+    display:none;
+}
+.gnbFixed ul li span{
+    display:block;
+    width:10px;
+    height: 10px;
+    background-color:#0f4c81;
+    border:1px solid #fff;
+    transform:rotate(45deg);
+}
+.gnbFixed ul li a{
+    display:block;
+}
+.gnbFixed ul li a:hover span{
+    background-color:#000;
+    transform:rotate(180deg);
+}
+
 
 
 /*gnb*/
