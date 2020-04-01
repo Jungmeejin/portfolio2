@@ -65,35 +65,17 @@
         $("#ban_btn").click(function(){
             $(".hiddenBD").slideToggle();
         });
-        //$("#btn6").click(function(){
-         //   $(this).parent().next().slideToggle("fast");//
-        //});
         //hide banner_배너 접었다폈다
 
-        //Fixed gnb_메뉴상단고정
-        var jbOffset = $(".gnb").offset(); 
+        
+        
+        var jbOffset = $('.gnb').offset();
         $(window).scroll(function(){
-            if($(document).scrollTop()>jbOffset.top){
-                $(".gnb").addClass("gnbFixed");
-            }else{$(".gnb").removeClass("gnbFixed");
+            if($(document).scrollTop() > jbOffset.top){
+                $('.gnb').addClass('gnbFixed');
+            }else{
+                $('.gnb').removeClass('gnbFixed');
             }
-        });        
-        //Fixed gnb_메뉴 상단고정
-        
-        
-        $('.gnb ul li a').click(function(e){
-            $('.gnb ul li').removeClass('.menu-on');
-            $(this).parent('li').addClass('.menu-on');
-            e.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
-        });
-        
-        
-        $('.gnbFixed ul li a').click(function(e){
-            $('.gnbFixed ul li').removeClass('.menu-on');
-            $(this).parent('li').addClass('.menu-on');
-            e.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
         });
 
 
@@ -124,16 +106,16 @@
             <div class="inner1160">
                 <!--logo-->
                 <h1>
-                    <a href="#">
+                    <a href="#header">
                         <img src="images/porfol2_21.png" alt="로고이미지"/>
                     </a>    
                 </h1>
                 <!--logo-->
 
                 <ul>
-                    <li class="menu-on"><a href="#iam">I AM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="menu-on"><a href="#iam"><p>I AM</p><span></span></a></li>
+                    <li><a href="#portfolio"><p>PORTFOLIO</p><span></span></a></li>
+                    <li><a href="#contact"><p>CONTACT</p><span></span></a></li>
                 </ul>
             </div>
         </div>
