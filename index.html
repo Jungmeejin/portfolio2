@@ -68,7 +68,7 @@
         //hide banner_배너 접었다폈다
 
         
-        
+        //gnb_fix
         var jbOffset = $('.gnb').offset();
         $(window).scroll(function(){
             if($(document).scrollTop() > jbOffset.top){
@@ -77,7 +77,25 @@
                 $('.gnb').removeClass('gnbFixed');
             }
         });
-
+        //gnb_fix
+        
+        //gnb,gnbFixed 부드럽게 이동
+        $('.gnb ul li a').click(function(e){
+            $('.gnb ul li').removeClass('.menu-on'); 
+        
+            $(this).parent('li').addClass('.menu-on');
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+        });
+        
+        
+        $('.gnbFixed ul li a').click(function(e){
+            $('.gnbFixed ul li').removeClass('.menu-on');
+            $(this).parent('li').addClass('.menu-on');
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+        });
+        //gnb,gnbFixed 부드럽게 이동
 
     });
        
