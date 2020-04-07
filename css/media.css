@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+/*768~1200*/
+@media screen and (min-width:1024px) and (max-width:1200px){
+    #wrap{}
+    
+    /*header*/
+    #header{}
+    .mainVisual{}
+    .main{
+        right:15%;
+    }
+    /*gnb*/
+    .gnb{}
+    .gnb .inner1160{
+        width:1000px;
+    }
+}
+/*1024~1200*/
+
+/*768~1023*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    body{
+        min-width: 768px;
+    }
+    #wrap{}
+    .inner1160{
+        width:800px;
+    }
+    .inner1000{
+        width:700px;
+    }
+    
+    /*header*/
+    #header{}
+    .mainVisual{}
+    .main{
+        width:320px;
+        height: 280px;
+    }
+    .main h1{
+        font-size:56px;
+    }
+    .main p{}
+    .mainS{
+        width:320px;
+        height: 60px;
+    }
+    .mainS span{
+        line-height: 60px;
+        font-size:28px;
+    }
+    
+    /*gnb*/
+    .gnb{}
+    .gnb h1{
+        padding-left:3%;
+    }
+    .gnb h1 a{}
+    .gnb h1 a img{}
+    .gnb ul{
+        margin-right:4%;
+    }
+    .gnb ul li{}
+    .gnb ul li a{}
+    .gnb ul li a p{}
+    .gnb ul li a span{}
+    
+    .gnbFixed h1{
+        right:10%;
+    }
+    /*gnb*/
+    /*header*/
+    
+    /*container*/
+    #container{}
+    /*container1*/
+    .container1{
+        width:800px;
+    }
+    
+    /*iam_intro*/
+    #iam{}
+    #iam h2{}
+    
+    .history{
+        display:block;
+        width:600px;
+        margin:0 auto;
+    }
+    .history h3{}
+    .his_txt{}
+    .his_txt img{}
+    .imgp2{}
+    .his_txt p{
+        font-size:20px;
+    }
+    .his_txt span{
+        font-size:18px;
+    }
+    
+    .intro{
+        display:none;
+    }
+    .intro_m{
+        display:block;
+        width:600px;
+        margin:0 auto;
+        text-align: center;
+        margin-top:50px;
+    }
+    .intro_m p{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    
+    /*iam_intro*/
+    
+    /*portfolio*/
+    #portfolio{}
+    .line{
+        width:300px;
+    }
+    #portfolio h2{}
+    
+    /*web*/
+    .webD{}
+    .webD h3{}
+    
+    .webBox{
+        height:630px;
+        width:620px;
+    }
+    .webBox a{}
+    .webBox a img{
+        margin:30px auto;
+    }
+    .web_txt{
+        top:392px;
+        right:150px;
+    }
+    .web_txt h4{}
+    .web_txt p{}
+    
+    .webBox1{
+        background:url(../images/m_porfol2_04.png) no-repeat;
+        background-size:contain;
+        background-position:center center;
+    }
+    .webBox2{
+        background:url(../images/m_porfol2_24.png) no-repeat;
+        background-size:contain;
+        background-position:center center;
+    }
+    .webBox3{
+        background:url(../images/m_porfol2_13.png) no-repeat;
+        background-size:contain;
+        background-position:center center;
+    }
+    .webBox4{
+        background:url(../images/m_porfol2_21.png) no-repeat;
+        background-size:contain;
+        background-position:center center;
+    }
+    
+    .navWEB{
+        width:410px;
+    }
+    .navWD{}
+    .navWD img{}
+    /*web*/
+    
+    /*banner*/
+    .bannerD{}
+    .bannerD h3{}
+    .banD{
+        width:auto;
+        margin:0 auto;
+    }
+    .banD li{
+        display:block;
+        margin:0;
+    }
+    .banL{}
+    .banL img{
+        margin:0 auto;
+        margin-bottom:3px;
+    }
+    .banR{}
+    .banR img{
+        margin:0 auto;
+        margin-bottom:3px;
+    }
+    
+    .hiddenBD{}
+    .Dif_banD{}
+    .dif_ban1{}
+    .dif_ban1 img{}
+    .dif_ban2{}
+    .dif_ban2 img{}
+    
+    #ban_btn{}
+    #ban_btn button{}
+    #ban_btn button img{}
+    /*banner*/
+    /*container1*/
+
+    /*container2*/
+    .container2{}
+    /*art*/
+    .artD{}
+    .artD h3{}
+    .art{
+        height: 480px;
+    }
+    .artIMG{
+        width:620px;
+        height: 400px;
+    }
+    .artB{}
+    .artB img{
+        display:none;
+    }
+    .artB .artB_m{
+        display:block;
+    }
+    /*art*/
+    /*portfolio*/
+    
+    /*contact*/
+    .contact{}
+    .contact h3{}
+    .cont_txt{}
+    .cont_txt h4{}
+    .cont_txt p{}
+    /*contact*/
+    /*container2*/
+    /*container*/
+    /*footer*/
+    #footer{}
+    #footer p{
+        margin-right:5%;
+    }
+    /*footer*/
+
+}
+/*768~1023*/
+
+
+/*320~767*/
+@media screen and (min-width:320px) and (max-width:767px){
+    body{
+        min-width: 320px;
+    }
+    #wrap{}
+    .inner1160{
+        width:auto;
+    }
+    .inner1000{
+        width:auto;
+    }
+    
+    /*header*/
+    #header{}
+    .mainVisual{
+        height:300px;
+    }
+    .main{
+        width:160px;
+        height: 140px;
+        right:5%;
+    }
+    .main h1{
+        font-size:30px;
+        margin:10px 5px;
+    }
+    .main p{
+        font-size:22px;
+        margin:3px 5px;
+    }
+    .mainS{
+        width:160px;
+        height: 35px;
+        margin:0;
+        margin-left:-3px;
+        margin-top:15px;
+    }
+    .mainS span{
+        line-height: 35px;
+        font-size:20px;
+        
+    }
+    
+    /*gnb*/
+    .gnb{}
+    .gnb h1{
+        padding: 10px 0 15px 3%;
+    }
+    .gnb h1 a{
+        display:block;
+        height:auto;
+    }
+    .gnb h1 a img{
+        width:50%;
+        display:block;
+    }
+    .gnb ul{
+        margin-right:4%;
+        padding-bottom:10px;
+        margin-top:-35px;
+    }
+    .gnb ul li{}
+    .gnb ul li a{}
+    .gnb ul li a p{}
+    .gnb ul li a span{}
+    
+    .gnbFixed h1{
+        right:10%;
+        top:240px;
+        width:40px;
+    }
+    /*gnb*/
+    /*header*/
+    
+    /*container*/
+    #container{
+        width:auto;
+    }
+    /*container1*/
+    .container1{
+        width:auto;
+    }
+    
+    /*iam_intro*/
+    #iam{
+        padding-top:50px;
+    }
+    #iam h2{
+        font-size:28px;
+    }
+    
+    .history{
+        display:block;
+        width:90%;
+        margin:0 auto;
+        height:auto;
+    }
+    .history h3{}
+    .his_txt{}
+    .his_txt img{}
+    .imgp2{}
+    .his_txt p{
+        font-size:20px;
+    }
+    .his_txt span{
+        font-size:18px;
+    }
+    
+    .intro{
+        display:none;
+    }
+    .intro_m{
+        display:block;
+        width:auto;
+        margin:0 auto;
+        text-align: center;
+        margin-top:50px;
+    }
+    .intro_m p{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    
+    /*iam_intro*/
+    
+    /*portfolio*/
+    #portfolio{}
+    .line{
+        width:30%;
+    }
+    #portfolio h2{
+        font-size:28px;
+    }
+    
+    /*web*/
+    .webD{}
+    .webD h3{}
+    
+    .webBox{
+        height:520px;
+        width:620px;
+    }
+    .webBox a{}
+    .webBox a img{
+        margin:30px auto;
+        width:60%;
+    }
+    .web_txt{
+        top:auto;
+        bottom:3%;
+        right:0;
+        left:50%;
+        transform:translateX(-50%);
+        width:300px;
+        height: 200px;
+    }
+    .web_txt h4{
+        margin-top:40px;
+    }
+    .web_txt p{}
+    
+    .webBox1{
+        background:url(../images/m_porfol2_04.png) no-repeat;
+        background-size:cover;
+        background-position:center center;
+    }
+    .webBox2{
+        background:url(../images/m_porfol2_24.png) no-repeat;
+        background-size:cover;
+        background-position:center center;
+    }
+    .webBox3{
+        background:url(../images/m_porfol2_13.png) no-repeat;
+        background-size:cover;
+        background-position:center center;
+    }
+    .webBox4{
+        background:url(../images/m_porfol2_21.png) no-repeat;
+        background-size:cover;
+        background-position:center center;
+    }
+    
+    .navWEB{
+        width:410px;
+    }
+    .navWD{}
+    .navWD img{
+        display:none;
+    }
+    .navWD .navWD_m{
+        display:block;
+        height: auto;
+        width:70%;
+    }
+    
+    
+
+    
+    /*web*/
+    
+    /*banner*/
+    .bannerD{}
+    .bannerD h3{}
+    .banD{
+        width:auto;
+        margin:0 auto;
+    }
+    .banD li{
+        display:block;
+        margin:0;
+    }
+    .banL{}
+    .banL img{
+        margin:0 auto;
+        margin-bottom:3px;
+    }
+    .banR{}
+    .banR img{
+        margin:0 auto;
+        margin-bottom:3px;
+    }
+    
+    .hiddenBD{}
+    .Dif_banD{}
+    .dif_ban1{}
+    
+
+    .dif_ban2{}
+    
+    .banD.Dif_banD li img{
+        display:none;
+    }
+    .banD.Dif_banD li.dif_ban1 .banIMG_m, .banD.Dif_banD li.dif_ban2 .banIMG_m {
+        display: block;
+    }
+    
+    
+    #ban_btn{}
+    #ban_btn button{}
+    #ban_btn button img{}
+    /*banner*/
+    /*container1*/
+
+    /*container2*/
+    .container2{}
+    /*art*/
+    .artD{}
+    .artD h3{}
+    .art{
+        height: 480px;
+    }
+    .artIMG{
+        width:620px;
+        height: 400px;
+    }
+    .artB{}
+    .artB img{
+        display:none;
+    }
+    .artB .artB_m{
+        display:block;
+    }
+    /*art*/
+    /*portfolio*/
+    
+    /*contact*/
+    .contact{}
+    .contact h3{}
+    .cont_txt{}
+    .cont_txt h4{}
+    .cont_txt p{}
+    /*contact*/
+    /*container2*/
+    /*container*/
+    /*footer*/
+    #footer{}
+    #footer p{
+        margin-right:5%;
+    }
+    /*footer*/
+}
+/*320~767*/
+
+
+
+
+
+
+
+
+

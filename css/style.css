@@ -9,7 +9,8 @@
     background:url(../images/porfol2_01.png) no-repeat;
     background-position:center center;
     background-size:cover;
-    padding:185px 10% 230px 0;
+    height: 500px;
+    position:relative;
 }
 .main{
     font-family: 'GothamPro';
@@ -19,7 +20,9 @@
     background-color:rgba(24,77,127,0.6);
     border:3px solid #fff;
     text-align:right;
-    float:right;
+    position:absolute;
+    top:54px;
+    right:10%;
 }
 .main h1{
     font-size:70px;
@@ -213,6 +216,9 @@
 .intro .intro1{
     margin-top:30px;
 }
+.intro_m{
+    display:none;
+}
 /*intro/IAM*/
 
 /*portfolio*/
@@ -338,7 +344,9 @@
 .navWEB .slick-dots li button:before{
     content:'';
 }
-
+.navWD .navWD_m{
+    display:none;
+}
 
 /*banner*/
 .bannerD{
@@ -355,16 +363,13 @@
 
 .banD{
     margin-bottom: 15px;
+    font-size:0;
 }
 .banD li{
     display:inline-block;
 }
-.banL{
-    margin-right:3px;
-}
-.banR{
-    margin-left:3px;
-}
+.banL{}
+.banR{}
 .banD li img{
     display:block;
 }
@@ -378,8 +383,15 @@
 }
 
 .Dif_banD{}
-.dif_ban1{}
-.dif_ban2{}
+.dif_ban1{
+    margin-right:10px;
+}
+.dif_ban2{
+    margin-left:10px;
+}
+.dif_ban1 .banIMG_m,.dif_ban2 .banIMG_m{
+    display: none;
+}
 
 #ban_btn{
     width:60px;
@@ -415,33 +427,6 @@
 
 /*banner*/
 
-/*poster*/
-.posterD{
-    text-align: center;
-    font-family: 'GothamPro';
-}
-.posterD h3{
-    display: block;
-    text-align: center;
-    font-weight: 200;
-    font-size: 26px;
-    margin-bottom: 70px;
-    margin-top:100px;
-}
-.posterD ul{}
-.posterD ul li{
-    float:left;
-    margin-right:20px;
-}
-.posterD ul li:last-child{
-    margin-right:0;
-}
-.posterD ul li img{
-    display: block;
-    box-shadow: 4px 4px 5px #999;
-}
-/*poster*/
-
 /*art*/
 .artD{
     text-align: center;
@@ -462,7 +447,6 @@
     padding-top:40px;
 }
 .artIMG{
-    width:1080px;
     height: 650px;
     display: block;
     background-color:#000;
@@ -481,6 +465,9 @@
 }
 .artIMG .slick-dots li button:before{
     content:'';
+}
+.artB .artB_m{
+    display:none;
 }
 
 /*art*/
