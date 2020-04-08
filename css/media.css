@@ -309,16 +309,25 @@
         padding-bottom:10px;
         margin-top:-35px;
     }
-    .gnb ul li{}
+    .gnb ul li{
+        margin:0 2px;
+    }
     .gnb ul li a{}
-    .gnb ul li a p{}
+    .gnb ul li a p{
+        font-size:13px
+    }
     .gnb ul li a span{}
     
     .gnbFixed h1{
-        right:10%;
+        right:6%;
         top:240px;
         width:40px;
     }
+    .gnbFixed ul{}
+    .gnbFixed ul li{
+        margin:10px 2px;
+    }
+    
     /*gnb*/
     /*header*/
     
@@ -336,7 +345,7 @@
         padding-top:50px;
     }
     #iam h2{
-        font-size:28px;
+        font-size:24px;
     }
     
     .history{
@@ -345,15 +354,19 @@
         margin:0 auto;
         height:auto;
     }
-    .history h3{}
+    .history h3{
+        font-size:18px;
+    }
     .his_txt{}
-    .his_txt img{}
+    .his_txt img{
+        width:16px;
+    }
     .imgp2{}
     .his_txt p{
-        font-size:20px;
+        font-size:15px;
     }
     .his_txt span{
-        font-size:18px;
+        font-size:14px;
     }
     
     .intro{
@@ -367,27 +380,33 @@
         margin-top:50px;
     }
     .intro_m p{
-        font-size:20px;
+        font-size:14px;
         margin-bottom: 20px;
     }
     
     /*iam_intro*/
     
     /*portfolio*/
-    #portfolio{}
+    #portfolio{
+        padding-top:50px;
+    }
     .line{
         width:30%;
     }
     #portfolio h2{
-        font-size:28px;
+        font-size:24px;
+        margin:40px 0 50px 0;
     }
     
     /*web*/
     .webD{}
-    .webD h3{}
+    .webD h3{
+        font-size:18px;
+        margin-bottom: 40px;
+    }
     
     .webBox{
-        height:520px;
+        height:380px;
         width:620px;
     }
     .webBox a{}
@@ -397,17 +416,23 @@
     }
     .web_txt{
         top:auto;
-        bottom:3%;
+        bottom:5%;
         right:0;
         left:50%;
         transform:translateX(-50%);
         width:300px;
-        height: 200px;
+        height: 140px;
     }
     .web_txt h4{
-        margin-top:40px;
+        margin-top:20px;
+        margin-bottom:16px;
+        font-size:17px;
     }
-    .web_txt p{}
+    .web_txt p{
+        font-size:15px;
+        margin-bottom:6px;
+        font-weight: 100;
+    }
     
     .webBox1{
         background:url(../images/m_porfol2_04.png) no-repeat;
@@ -431,7 +456,8 @@
     }
     
     .navWEB{
-        width:410px;
+        width:270px;
+        padding-left:25px;
     }
     .navWD{}
     .navWD img{
@@ -450,7 +476,10 @@
     
     /*banner*/
     .bannerD{}
-    .bannerD h3{}
+    .bannerD h3{
+        font-size:18px;
+        margin:70px 0 30px 0;
+    }
     .banD{
         width:auto;
         margin:0 auto;
@@ -463,11 +492,13 @@
     .banL img{
         margin:0 auto;
         margin-bottom:3px;
+        width:90%;
     }
     .banR{}
     .banR img{
         margin:0 auto;
         margin-bottom:3px;
+        width:90%;
     }
     
     .hiddenBD{}
@@ -482,10 +513,17 @@
     }
     .banD.Dif_banD li.dif_ban1 .banIMG_m, .banD.Dif_banD li.dif_ban2 .banIMG_m {
         display: block;
+        width:90%;
+    }
+    .banD.Dif_banD li.dif_ban2 .banIMG_m{
+        width:70%;
     }
     
     
-    #ban_btn{}
+    #ban_btn{
+        width:46px;
+        height: 46px;
+    }
     #ban_btn button{}
     #ban_btn button img{}
     /*banner*/
@@ -495,13 +533,18 @@
     .container2{}
     /*art*/
     .artD{}
-    .artD h3{}
+    .artD h3{
+        font-size:18px;
+        margin:40px 0 30px 0;
+    }
     .art{
-        height: 480px;
+        height: auto;
+        padding-bottom: 40px;
     }
     .artIMG{
-        width:620px;
-        height: 400px;
+        width:90%;
+        height:auto;
+        font-size:0;
     }
     .artB{}
     .artB img{
@@ -509,16 +552,30 @@
     }
     .artB .artB_m{
         display:block;
+        width:100%;
     }
     /*art*/
     /*portfolio*/
     
     /*contact*/
     .contact{}
-    .contact h3{}
+    .contact h3{
+        font-size:24px;
+        padding-top:40px;
+        margin-bottom:30px;
+    }
     .cont_txt{}
-    .cont_txt h4{}
-    .cont_txt p{}
+    .cont_txt h4{
+        font-size:18px;
+        margin:15px 0;
+    }
+    .cont_txt p{
+        font-size:16px;
+        padding-bottom: 30px;
+    }
+    .cont_txt p.cont_txt_last{
+        padding-bottom: 50px;
+    }
     /*contact*/
     /*container2*/
     /*container*/
@@ -526,6 +583,8 @@
     #footer{}
     #footer p{
         margin-right:5%;
+        font-size:10px;
+        padding:30px 0 15px 0;
     }
     /*footer*/
 }
